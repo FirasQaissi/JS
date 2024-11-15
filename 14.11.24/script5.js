@@ -30,22 +30,25 @@
 //
 //}
 
-let actors = ['jordan', 'kobe', 'wade', 'nash', 'harden'];
 
-for (let actor of actors) {
-    const item = actor.split('')
-    item[0] = item[0].toUpperCase();
-    let newtext = item.join('');
-    console.log(newtext);
+let animals = ['lion', 'horse', 'cat', 'dog', 'snake', 'bird'];
+
+for (let animal of animals) {
+    let newitem = animal.split('');
+    newitem[0] = newitem[0].toUpperCase();
+    const text = newitem.join('');
+    console.log(text);
 
 }
+
+
 
 '************Filter *********'
 
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const oddNumber = numbers.filter(function (item) {
-    return item % 2 == 0;
+    return item % 2 !== 0;
 }
 
 )
