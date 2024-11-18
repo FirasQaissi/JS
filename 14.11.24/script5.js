@@ -48,11 +48,11 @@ for (let animal of animals) {
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const oddNumber = numbers.filter(function (item) {
-    return item % 2 !== 0;
+    return item % 2 == 0;
 }
 
 )
-
+console.log(oddNumber);
 for (let i in oddNumber) {
     oddNumber[i] *= 100;
 }
