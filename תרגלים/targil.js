@@ -1,22 +1,16 @@
-const a = [55, 92, 78, 99, 88];
-function oki() {
+function sum(arr) {
+    let total = 0;
 
-    const faild = [];
-    const mideum = [];
-    const excelent = [];
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
 
-    for (let one of a) {
-        if (one >= 90) {
-            excelent.push(one);
-        } else if (one <= 90 && one >= 70) {
-            mideum.push(one);
-        }
-        else { faild.push(one) }
-    } console.log(faild); console.log(mideum); console.log(excelent);
-
-
+    console.log(total);
+    return total;
 }
 
+sum([1, 2, 3, 4, 5,])
 
-oki()
+let sum2 = sum([1, 2, 3, 4, 5,])
 
+console.log(sum2);
