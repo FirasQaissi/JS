@@ -1,0 +1,16 @@
+function sum(arr) {
+    let q = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        q += arr[i]
+    }
+
+    console.log(q);
+    return q;
+}
+
+sum([1, 2, 3, 4, 5,])
+
+let sum2 = sum([1, 2, 3, 4, 5,])
+
+console.log(sum2);

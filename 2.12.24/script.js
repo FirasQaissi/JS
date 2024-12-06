@@ -56,8 +56,8 @@ for (let obj of Object.values(car)) {
 console.log(Object.keys(car));
 console.log(Object.values(car));
 
-
-
+let test = []
+let newPinCode
 let user = {
     first: 'firas',
     last: 'Qaissi',
@@ -81,7 +81,7 @@ let user = {
         let username = prompt('UserName Please?');
         let password1 = +prompt('Your Password?');
         if (username === user.first || password1 === user.password) {
-            this.isLogin = true, alert('sucsses')
+            alert('sucsses')
         } else { alert('try again') }
 
     },
@@ -93,16 +93,18 @@ let user = {
         }
     },
 
-    changePassword: function () {
+    change: () => {
         let firstpass = +prompt('Enter Your First Password?');
 
-        if (firstpass === this.password) {
-            prompt('enter your newPass Please');
-
+        if (firstpass === user.oldPass) {
+            newPinCode = prompt('enter your newPass Please');
+            test.push(newPinCode);
         } else { alert('not good') }
     },
 
+
 }
+
 
 
 
@@ -121,5 +123,6 @@ console.log(`${user.first} ${user.last}`);
 
 
 
-user.changePassword()
+user.change()
 
+console.log(test);
