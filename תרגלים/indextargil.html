@@ -5,18 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js2.js" defer></script>
+    <style>
+        .first {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(45, 94, 200, 0.2);
+            margin-top: 10%;
+            background-image: url();
+        }
 
+
+        #startbtn {
+            background-color: red;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        #p1 {
+            text-decoration: dotted;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <h1 id="questions"></h1>
-        <h1></h1>
-    </div>
-    <div id="input1"><input type="number"></div>
-    <div id="click" onclick="Text">click here</div>
 
-    <script src="./js2.js" defer></script>
+
+    <div class=" first ">
+
+        <h1>משחק מחשבון</h1>
+        <p id="p1">if YOU get 10 from 10 you WIN 100$</p>
+        <button id="startbtn" onclick="calc()">התחל משחק</button>
+        <p></p>
+
+
+
+    </div>
+
+
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/loops/indexloop.html"
+    "livePreview.defaultPreviewPath": "/loops/indexloop.html",
+    "liveServer.settings.port": 5501
 }
