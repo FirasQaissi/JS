@@ -2,18 +2,19 @@
 function calc() {
     let correctAnswers = 0
     document.querySelector('.first').innerHTML = `
-        <h1>משחק של 2025</h1>
+        <h1 id = "text2" >Lets Start:</h1>
         <div id = "part2"> </div>
-        <p>if you get 10 from 10 you can get 150$</p>
+       
         <p id="corecct" ></p>
      `
     let userQuestion = 0
+
 
     plusMin()
 
     function plusMin() {
 
-        if (userQuestion < 2) {
+        if (userQuestion < 5) {
             let num1 = Math.floor(Math.random() * 10)
             let num2 = Math.floor(Math.random() * 10)
             const operatorss = ['+', '-', '*', '/'];
@@ -31,24 +32,24 @@ function calc() {
                 corecctResults = num1 / num2;
             }
 
+
             document.getElementById("part2").innerHTML = `
                 <div class="question">
-                <h2>שאלה ${userQuestion + 1}  מתוך 10 </h2>
-               <p> ${num1}  ${oper} ${num2} </p>
-                 <input type="number" id = "answerInput">
-                 <button onclick= 'check( ${corecctResults})' >בדוק תשובה</button></div>
+                <h2 id = "h2q">Question (${userQuestion + 1}) from (10) </h2>
+               <p id='q1' > ${num1}  ${oper} ${num2} </p>
+                 <input type="number" id = "answerInput"><br><br>
+                 <button id=ccc onclick= 'check( ${corecctResults})' >Check Your Answer</button></div>
             `
 
 
         } else {
 
             document.querySelector('#corecct').innerHTML = `
-            ${correctAnswers} ענית נכון על
+           Correct answer:  ${correctAnswers} 
 
             `
 
         }
-
 
 
         window.check = function (corecctResults) {
@@ -64,3 +65,6 @@ function calc() {
     }
 
 }
+
+
+
