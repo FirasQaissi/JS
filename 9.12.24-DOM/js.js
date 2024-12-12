@@ -91,6 +91,6 @@ const circle = document.querySelector('.circle')
 
 circle.addEventListener('click', (event) => {
 
-    circle.style.Color = 'black'
+    circle.style.Color = 'blue';
 
-})
+});
