@@ -58,6 +58,33 @@ const people = [
     }
 ];
 
-if (localStorage.getItem("people") === null) {
-    localStorage.setItem("people", people);
-}
+
+const jsonString = JSON.stringify(people);
+console.log(jsonString);
+
+
+localStorage.setItem("people", jsonString);
+
+
+const data = localStorage.getItem('people');
+const parsed = JSON.parse(data);
+
+parsed.push({ name: 'jack', age: 40 });
+console.log(parsed);
+
+
+
+
+const animals = ['dog', 'cat', 'lion', 'tiger', 'bird', 'snake', 'fish'];
+
+const Json = JSON.stringify(animals);
+localStorage.setItem('Animals ', Json);
+
+const animalFromStorage = localStorage.getItem('animals');
+const parseAnimals = JSON.parse(animalFromStorage);
+parseAnimals.pop();
+
+localStorage.setItem('new-animals', JSON.stringify(parseAnimals));
+
+
+
