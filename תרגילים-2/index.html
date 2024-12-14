@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <script src="./script.js" defer></script>
+    <style>
+        body {
+            direction: rtl;
+        }
+
+        #aba {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+
+
+        }
+
+        #left {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            direction: ltr;
+            background-color: rgb(195, 199, 199);
+            border-radius: 20px;
+            justify-content: center;
+
+        }
+
+        #main {
+
+            background-image: url(/pexels-photo-235985.jpeg);
+            direction: rtl;
+            border: 2px solid black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="aba">
+
+
+        <div id="main">
+
+            <div id="inputs">
+                <label for="">סוג אלמנט</label>
+                <input id="one" type="text">
+            </div>
+
+            <div id="submits">
+
+                <input id="add" type="submit" value="הוסף" onclick=" addone()">
+                <input id="save" type="submit" value="מחק">
+
+            </div>
+
+
+
+
+            <div id="left">
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

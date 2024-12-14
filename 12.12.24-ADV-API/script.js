@@ -12,5 +12,5 @@ animals.pop()
 const animalstringfy1 = JSON.stringify(parseAnimals)
 localStorage.setItem('NewAnimals', animals)
 
-
+-
 console.log(animals);
