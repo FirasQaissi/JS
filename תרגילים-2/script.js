@@ -116,20 +116,31 @@ document.body.appendChild(main)
 
 const left = document.getElementById('left')
 const oneinput = document.getElementById('one')
+
 function addone() {
 
 
 
     const kindOf = document.createElement(oneinput.value)
     kindOf.innerHTML = textArea.value
+    kindOf.style.color = fontColorInput.value
+    kindOf.style.width = firstInput.value
+    kindOf.style.height = secondInput.value
+    kindOf.style.fontSize = fontSizeInput.value
+    kindOf.style.kindOfFont = kindOfFontInput.value
+
     left.appendChild(kindOf)
 
 
 
 }
+const delet = document.getElementById('delet');
 
+function remove() {
+    window.location.reload();
+}
 
-
+delet.addEventListener("click", remove);
 
 
 
