@@ -28,6 +28,7 @@ inputs.style.textAlign = 'Center'
 inputs.style.marginBottom = '2%'
 inputs.style.color = 'black'
 
+
 //=========SubmitsDesign===============
 
 const SubmitsDesign = document.getElementById('submits')
@@ -56,6 +57,8 @@ const firstInput = document.createElement('input')
 
 inputs.appendChild(firstInput)
 document.body.appendChild(main)
+firstInput.style.borderRadius = '30px'
+firstInput.placeholder = '30px,50px,..in-PX-or %.'
 
 
 
@@ -69,6 +72,7 @@ const secondInput = document.createElement('input')
 secondInput.innerHTML = ''
 inputs.appendChild(secondInput)
 document.body.appendChild(main)
+secondInput.placeholder = '30px,50px,..in-PX-or %.'
 
 
 const fourthLabel = document.createElement('label')
