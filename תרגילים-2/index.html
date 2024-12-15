@@ -39,7 +39,31 @@
             background-image: url(/pexels-photo-235985.jpeg);
             direction: rtl;
             border: 2px solid black;
+            height: 85vh;
 
+        }
+
+        #selector {
+
+            width: 150px;
+            text-align: center;
+
+        }
+
+        #add {
+            border-radius: 35px;
+            border: none;
+            width: 50px;
+        }
+
+        #save {
+            border-radius: 35px;
+            border: none;
+            width: 50px;
+        }
+
+        #submits {
+            width: 30%;
         }
     </style>
 
@@ -53,15 +77,32 @@
 
         <div id="main">
 
+
+
             <div id="inputs">
-                <label for="">סוג אלמנט</label>
-                <input id="one" type="text">
+                <select name="" id="selector">
+                    <option disabled value="" selected>Select Element</option>
+                    <option value="Div">Div</option>
+                    <option value="h1">h1</option>
+                    <option value="h2">h2</option>
+                    <option value="p">p</option>
+                    <option value="span">span</option>
+                    <option value="a">a</option>
+                    <option value="button">button</option>
+                    <option value="label">label</option>
+                    <option value="input">input</option>
+
+                </select>
+
             </div>
+
+
+
 
             <div id="submits">
 
                 <input id="add" type="submit" value="הוסף" onclick=" addone()">
-                <input id="delet" type="submit" value="מחק" onclick=" remove()">
+                <input id="save" type="submit" value="מחק" onclick=" remove()">
 
             </div>
 

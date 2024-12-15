@@ -19,13 +19,13 @@ inputs.style.height = '80vh'
 inputs.style.flexDirection = 'column'
 inputs.style.marginTop = '1%'
 inputs.style.backgroundSize = 'Cover'
-inputs.style.gap = '15px'
+inputs.style.gap = '5px'
 inputs.style.fontSize = '27px'
 inputs.style.justifyContent = 'Center'
 inputs.style.alignItems = 'Center'
 inputs.style.margin = 'Auto'
 inputs.style.textAlign = 'Center'
-inputs.style.marginBottom = '6%'
+inputs.style.marginBottom = '2%'
 inputs.style.color = 'black'
 
 //=========SubmitsDesign===============
@@ -37,8 +37,8 @@ SubmitsDesign.style.width = '20%'
 SubmitsDesign.style.height = '10vh'
 SubmitsDesign.style.justifyContent = 'Center'
 SubmitsDesign.style.margin = 'Auto'
-SubmitsDesign.style.gap = '15px'
-SubmitsDesign.style.marginBottom = '4%'
+SubmitsDesign.style.gap = '3px'
+SubmitsDesign.style.marginBottom = '2%'
 
 
 
@@ -114,20 +114,36 @@ inputs.appendChild(kindOfFontInput)
 document.body.appendChild(main)
 
 
+
+const backgroundColorForDiv1 = document.createElement('label')
+backgroundColorForDiv1.innerHTML = 'צבע רקע'
+inputs.appendChild(backgroundColorForDiv1)
+document.body.appendChild(main)
+
+const backgroundColorForDiv2 = document.createElement('input')
+backgroundColorForDiv2.type = 'color'
+backgroundColorForDiv2.innerHTML = ''
+inputs.appendChild(backgroundColorForDiv2)
+document.body.appendChild(main)
+
+
 const left = document.getElementById('left')
 const oneinput = document.getElementById('one')
 
 function addone() {
 
 
+    const selector = document.getElementById('selector')
 
-    const kindOf = document.createElement(oneinput.value)
+
+    const kindOf = document.createElement(selector.value)
     kindOf.innerHTML = textArea.value
     kindOf.style.color = fontColorInput.value
     kindOf.style.width = firstInput.value
     kindOf.style.height = secondInput.value
     kindOf.style.fontSize = fontSizeInput.value
     kindOf.style.kindOfFont = kindOfFontInput.value
+    kindOf.style.backgroundColor = backgroundColorForDiv2.value
 
     left.appendChild(kindOf)
 
@@ -140,7 +156,7 @@ function remove() {
     window.location.reload();
 }
 
-delet.addEventListener("click", remove);
+refreshBtn.addEventListener("click", handleClick);
 
 
 
