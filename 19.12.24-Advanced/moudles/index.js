@@ -90,7 +90,7 @@ function yes() {
                 inputs.appendChild(document.createElement("br"));
 
                 submitButtonFlag.addEventListener('click', async () => {
-                    const countryName = newFlagInput.value.trim();
+                    const countryName = newFlagInput.value;
                     if (countryName) {
                         const flagUrl = await getFlagData(countryName);
                         if (flagUrl) {
