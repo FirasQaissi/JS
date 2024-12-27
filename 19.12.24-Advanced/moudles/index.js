@@ -87,6 +87,7 @@ function yes() {
                 submitButtonFlag.style.cursor = "pointer";
                 inputs.appendChild(document.createElement('br'));
                 inputs.appendChild(submitButtonFlag);
+                inputs.appendChild(document.createElement("br"));
 
                 submitButtonFlag.addEventListener('click', async () => {
                     const countryName = newFlagInput.value.trim();
