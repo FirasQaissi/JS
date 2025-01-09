@@ -180,21 +180,31 @@ class BasicUser {
 login(username,password){
 if(username === this.username||password=== this.password){
     this.islogin=true
-    alert('thanks')
+    console.log('good');
+    
 }
 }
 
  
 logOff(username,password){
-   else usernameme ||password!== this.password){
+    if( username !== this.username || password!== this.password){
         this.islogin=false
-        alert(
-            'baaad'
-        )
+       console.log('not good');
+       
     }
         
 
 }
+
+changePassword(){
+    let oldP = prompt('enter password')
+if(oldP === this.password){
+let newP = prompt('enter New Password')
+console.log(newP);
+
+}
+}
+
 } 
 
 const per1 = new BasicUser('firas','qaissi','firasq','1234')
@@ -206,8 +216,6 @@ per1.change('annna','vladimer')
 per1.login('firasq','1234')
 console.log(per1);
 
-per1.logOff()
+per1.logOff('firasq','1234')
 
-username
-
-
+per1.changePassword()
