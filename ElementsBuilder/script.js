@@ -58,7 +58,7 @@ const firstInput = document.createElement('input')
 inputs.appendChild(firstInput)
 document.body.appendChild(main)
 firstInput.style.borderRadius = '30px'
-firstInput.placeholder = '30px,50px,..in-PX-or %.'
+firstInput.placeholder = 'px %'
 
 
 
@@ -72,7 +72,7 @@ const secondInput = document.createElement('input')
 secondInput.innerHTML = ''
 inputs.appendChild(secondInput)
 document.body.appendChild(main)
-secondInput.placeholder = '30px,50px,..in-PX-or %.'
+secondInput.placeholder = ' px %'
 
 
 const fourthLabel = document.createElement('label')
@@ -93,7 +93,8 @@ document.body.appendChild(main)
 
 
 const fontColorInput = document.createElement('input')
-fontColorInput.innerHTML = ''
+fontColorInput.type = 'color'
+fontColorInput.innerHTML = fontColorInput.value
 inputs.appendChild(fontColorInput)
 document.body.appendChild(main)
 
@@ -133,6 +134,8 @@ document.body.appendChild(main)
 
 const left = document.getElementById('left')
 const oneinput = document.getElementById('one')
+
+left.style.flexWrap = 'wrap'
 
 function addone() {
 
