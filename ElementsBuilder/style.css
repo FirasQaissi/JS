@@ -29,4 +29,13 @@
         margin-bottom: 40% !important;
         margin: auto;
     }
+
+
+}
+
+label {
+    color: rgba(233, 194, 123, 0.836) !important;
+    font-family: cursive;
+    font-size: 25px;
+    margin: 2%;
 }

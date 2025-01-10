@@ -47,7 +47,7 @@ SubmitsDesign.style.marginBottom = '2%'
 //============Adds ManyOf Inputs & Labels to Html==================
 
 const secondLabel = document.createElement('label')
-secondLabel.innerHTML = 'רוחב'
+secondLabel.innerHTML = 'Width'
 inputs.appendChild(secondLabel)
 document.body.appendChild(main)
 
@@ -63,7 +63,7 @@ firstInput.placeholder = 'px %'
 
 
 const thirdLabel = document.createElement('label')
-thirdLabel.innerHTML = 'גובה'
+thirdLabel.innerHTML = 'Height'
 inputs.appendChild(thirdLabel)
 document.body.appendChild(main)
 
@@ -76,7 +76,7 @@ secondInput.placeholder = ' px %'
 
 
 const fourthLabel = document.createElement('label')
-fourthLabel.innerHTML = 'תוכן   '
+fourthLabel.innerHTML = ' Content '
 inputs.appendChild(fourthLabel)
 document.body.appendChild(main)
 
@@ -87,7 +87,7 @@ inputs.appendChild(textArea)
 document.body.appendChild(main)
 
 const TextColorLabel = document.createElement('label')
-TextColorLabel.innerHTML = 'צבע הגופן  '
+TextColorLabel.innerHTML = 'Font Color '
 inputs.appendChild(TextColorLabel)
 document.body.appendChild(main)
 
@@ -99,7 +99,7 @@ inputs.appendChild(fontColorInput)
 document.body.appendChild(main)
 
 const fontSizeLabel = document.createElement('label')
-fontSizeLabel.innerHTML = 'גודל הגופן  '
+fontSizeLabel.innerHTML = ' Font Size In px  '
 inputs.appendChild(fontSizeLabel)
 document.body.appendChild(main)
 
@@ -109,7 +109,7 @@ inputs.appendChild(fontSizeInput)
 document.body.appendChild(main)
 
 const kindOfFont = document.createElement('label')
-kindOfFont.innerHTML = 'סוג הגופן  '
+kindOfFont.innerHTML = ' Kind Of Font  '
 inputs.appendChild(kindOfFont)
 document.body.appendChild(main)
 
@@ -121,7 +121,7 @@ document.body.appendChild(main)
 
 
 const backgroundColorForDiv1 = document.createElement('label')
-backgroundColorForDiv1.innerHTML = 'צבע רקע'
+backgroundColorForDiv1.innerHTML = 'BackGround Color'
 inputs.appendChild(backgroundColorForDiv1)
 document.body.appendChild(main)
 

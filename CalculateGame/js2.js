@@ -14,7 +14,7 @@ function calc() {
 
     function plusMin() {
 
-        if (userQuestion < 5) {
+        if (userQuestion < 10) {
             let num1 = Math.floor(Math.random() * 10)
             let num2 = Math.floor(Math.random() * 10)
             const operatorss = ['+', '-', '*', '/'];
@@ -45,9 +45,14 @@ function calc() {
         } else {
 
             document.querySelector('#corecct').innerHTML = `
-           Correct answer:  ${correctAnswers} 
+           Correct answers:  ${correctAnswers} 
 
             `
+            const togreen = document.getElementById('corecct')
+            togreen.style.color = 'green'
+            togreen.style.fontSize = '40px'
+            togreen.style.textDecoration = 'underline'
+
 
         }
 
@@ -65,6 +70,8 @@ function calc() {
     }
 
 }
+
+
 
 
 

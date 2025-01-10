@@ -1,14 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+</head>
+<style>
+    body {
+        background-color: rgba(26, 103, 136, 0.163);
+    }
+
+    #UserBox,
+    #changename {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 95vh;
+        align-items: center;
+        justify-items: center;
+        background-image: url(./loginWallpaper.jpg);
+        margin: auto;
+        background-size: cover;
+        border: 3px solid rgb(1, 1, 11);
+        border-radius: 30px;
+
+    }
+
+
+    #inputs {
+        width: 50%;
+        height: 60%;
+        margin-top: 1%;
+        color: antiquewhite;
+        text-align: center;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        width: 30%;
+        height: 23px;
+        border-radius: 15px;
+        border: none;
+        font-family: fantasy;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px groove silver;
+        color: rgba(240, 248, 255, 0.5);
+        text-align: center;
+    }
+
+    #submit {
+        width: 120px;
+        height: 15%;
+        background-color: rgba(250, 235, 215, 0);
+        color: blue;
+        font-family: fantasy;
+        font-size: 38px;
+        cursor: pointer;
+    }
+
+    button {
+        width: 38%;
+        height: 27px;
+        border-radius: 15px;
+        border: none;
+        font-family: fantasy;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px groove rgb(35, 22, 212);
+        color: rgba(240, 248, 255, 0.5);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+
+    }
+</style>
+
+<body>
+
+    <div id="UserBox">
+
+        <div id="inputs">
+            <h1 id="main"> LogIn</h1>
+            <label for="">Username</label><br>
+            <input type="text" id="username"><br><br>
+            <label for="">Password</label><br><br>
+            <input type="password" id="pass"><br><br><br>
+            <input type="submit" value="login" id="submit" onclick="yes()""><br>
+            
+        </div>
+    </div>
+
+    <div id=" changeName">
+
+
+        </div>
+        <h2 id="wrong"></h2>
+
+</body>
+
+</html>
 
 
 
-
-
-
-
-
-
-
-
+============================================================================================================
 
 
 const person = {
