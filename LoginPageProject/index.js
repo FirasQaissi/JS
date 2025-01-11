@@ -1,16 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 const person = {
     userName: 'firas',
     email: 'firas@gmail.com',
@@ -30,6 +20,7 @@ const getFlagData = async (country) => {
         console.error(error.message);
         return null;
     }
+
 };
 function yes() {
     enterUsername = document.getElementById('username').value
@@ -77,7 +68,7 @@ function yes() {
             const newUserNames = changeNameInput.value
             if (newUserNames) {
                 newUsers.push(newUserNames)
-                
+
                 console.log("Updated users:", newUsers);
 
                 document.getElementById('changeName')
@@ -139,9 +130,8 @@ function yes() {
     }
 
 
-
-
 }
+
 
 
 
