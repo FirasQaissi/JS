@@ -77,7 +77,7 @@ function yes() {
             const newUserNames = changeNameInput.value
             if (newUserNames) {
                 newUsers.push(newUserNames)
-
+                
                 console.log("Updated users:", newUsers);
 
                 document.getElementById('changeName')

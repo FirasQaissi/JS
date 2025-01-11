@@ -1,0 +1,63 @@
+ body {
+     background-color: rgba(49, 68, 87, 0.329);
+ }
+
+ #main1 {
+     display: flex;
+     flex-direction: column;
+     width: 94vw;
+     height: 88vh;
+     background-image: url(./loginWallpaper.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: auto;
+     margin-top: 3%;
+     display: flex;
+     flex-direction: column;
+     color: antiquewhite;
+     align-items: center;
+     margin: auto;
+     border-radius: 55px;
+
+ }
+
+ #form {
+     color: white;
+     width: 25%;
+     height: 66%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     align-items: center;
+     margin-top: 3%;
+     font-family: fantasy;
+     text-align: center;
+
+ }
+
+ #submit {
+     width: 77%;
+     height: 44px;
+     cursor: pointer;
+     border-radius: 10px;
+     background-color: rgba(250, 235, 215, 0);
+     border: 2px solid rgb(57, 57, 139);
+     font-size: 30px;
+     color: rgba(67, 92, 160, 0.507);
+     font-family: fantasy;
+
+ }
+
+ input {
+     width: 88%;
+     height: 30px;
+     background-color: rgba(250, 235, 215, 0);
+     border: none;
+     border: 2px solid rgb(57, 57, 139);
+     border-radius: 10px;
+     font-family: fantasy;
+     text-align: center;
+     font-size: 17px;
+     color: blanchedalmond;
+ }
