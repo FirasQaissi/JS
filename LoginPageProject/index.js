@@ -132,6 +132,8 @@ function yes() {
 
 }
 
+export{yes}
+
 
 
 
