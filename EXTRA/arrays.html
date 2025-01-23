@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const arr = [1, 2, 3, 61, 44, 523, 67, 11, 123544, 2231, 442, 65, 23];
+
+        const min = Math.min(...arr)
+        const max = Math.max(...arr)
+        console.log(min);
+        console.log(max);
+
+        const max2 = arr.reduce((acc, curr) => {
+            return Math.max(acc, curr);
+        }, 0)
+
+
+        console.log(max2);
+
+
+        const find61 = arr.find((val, index) => {
+
+            return val === 61;
+
+        });
+        console.log(find61);
+
+
+        const cars = [
+            { brand: 'toyota', model: ' corola', year: 2018 },
+            { brand: 'Bmw', model: ' M3', year: 2024 },
+        ]
+
+        const findCar = cars.find((car) => {
+            return car.year === 2018
+        }).year;
+
+        const findCar2 = cars.findIndex((car) => {
+            return car.year === 2018
+            console.log(findCar2);
+        })
+
+        console.log(findCar);
+        console.log(findCar2);
+
+        arr.sort((x, y) => {
+            return x - y
+        })
+        console.log(arr);
+
+        cars.sort()
+        console.log(cars);
+
+
+        cars.sort((a, b) => {
+            return a.year + b.year
+        })
+        console.log(cars);
+
+
+        cars.sort((a, b) => {
+            return a.model > b.model ? 1 : -1
+        })
+        console.log(cars);
+
+
+
+        arr.reverse()
+        console.log(arr);
+
+
+
+        const test = [78, 23, 42, 67, 88, 55, 213, 53, 34, 1231]
+
+        const max1 = Math.max(...test)
+        const min2 = Math.min(...test)
+
+        console.log(max1);
+        console.log(min2);
+
+
+
+        const find34 = test.find((val, index) => {
+            return val === 34;
+        })
+        console.log(find34);
+
+
+        const animals = [
+            { age: 2, animal: 'cat', },
+            { age: 3, animal: 'dog', },
+            { age: 5, animal: 'snake', },
+            { age: 1, animal: 'bird', },
+        ]
+
+        animals.sort((x, y) => {
+            return x.age - y.age
+        })
+
+        console.log(animals);
+
+
+
+        const students = [
+
+            { grade: 90, name: 'daniel' },
+            { grade: 85, name: 'aviv' },
+            { grade: 70, name: 'Ori' },
+            { grade: 95, name: 'oren' },
+            { grade: 60, name: 'orly' },
+
+        ]
+
+        const sucess = students.filter(student => student.grade >= 71)
+        const faild = students.filter(student => student.grade <= 70)
+        console.log(sucess);
+        console.log(faild);
+
+        students.sort((a, b) => {
+            return a.grade - b.grade
+        })
+        console.log(students);
+
+
+
+
+        const highestGradeStudent = students.reduce((best, student) => student.grade > best.grade ? student : best, students[0]);
+        console.log("התלמיד עם הציון הגבוה ביותר:", highestGradeStudent.name);
+
+
+        const reverseStudent = highestGradeStudent.name.split('').reverse().join('')
+        console.log(reverseStudent);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

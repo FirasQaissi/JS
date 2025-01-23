@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+
+        const person = {
+            name: 'john',
+            age: 30,
+            city: 'jerusalem'
+        }
+        Object.assign({}, person)
+        console.log(person);
+
+        const newPerson = { ...person }
+        delete newPerson.age
+        console.log(newPerson);
+
+        let x = 10
+        delete x
+        console.log(x);
+
+        x = null
+        console.log(x);
+
+    </script>
+</body>
+
+</html>
