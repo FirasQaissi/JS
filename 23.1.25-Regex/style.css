@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    border-color: red
+}
+
+form {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    padding: 15px;
+}
+
+input [type="submit"],
+input[type="password"] {
+    margin-bottom: 10px;
+    width: 20%;
+}
